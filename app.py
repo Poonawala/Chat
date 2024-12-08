@@ -10,11 +10,11 @@ st.title("Streamlit Chatbot Interface")
 
 USER_AVATAR = "👤"
 BOT_AVATAR = "🤖"
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.getenv("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"))
 
 # Ensure openai_model is initialized in session state
 if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-3.5-turbo"
+    st.session_state["openai_model"] = "gpt-4"
 
 
 # Load chat history from shelve file
